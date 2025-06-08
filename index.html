@@ -11,13 +11,41 @@
 <body>
     <header class="header">
         <nav class="navigation">
-            <a href="index.html">Forside</a>
-            <a href="portfolie.html">Portfolie</a>
-            <a href="ommig.html">Om Mig</a>
-
+            <div class="burger" id="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="links" id="links">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="portfolie.html">Portfolie</a></li>
+                <li><a href="ommig.html">Om Mig</a></li>
+            </ul>
         </nav>
     </header>
 
+    <div class="indhold">
+        <div class="tekst-container">
+            <h1 class="navn">ZLATAN BABOVIC</h1>
+            <h2 class="undertitle">Studerende som Multimediedesigner på KEA</h2>
+            <p class="velkommen">Velkommen til min portfolie! Her kan du se hvad mine projekter igennem semestret</p>
+        </div>
+
+        <div class="billede">
+            <img src="img/forsidebillede.svg" alt="">
+        </div>
+
+        <div class="knap_container">
+            <a href="portfolie.html" class="knap">Portfolie</a>
+            <a href="ommig.html" class="knap">Om mig</a>
+        </div>
+    </div>
+
+
+
+
+    <script src="burgermenu.js"></script>
 </body>
+
 
 </html>
