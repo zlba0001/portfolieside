@@ -22,6 +22,7 @@
   display: none;
   flex-direction: column;
   position: absolute;
+  list-style: none;
   top: 70px;
   left: 0;
   width: 100%;
@@ -115,12 +116,14 @@ body {
 }
 
 .portfolio-boks {
+  display: block;
   background-color: #7a8b7f;
   border-radius: 20px;
   max-width: 250px;
   padding: 20px;
   margin-bottom: 40px;
   text-align: center;
+  text-decoration: none;
 }
 
 .portfolio-boks h2 {
@@ -135,9 +138,12 @@ body {
   max-height: 200px;
   object-fit: cover;
   border-radius: 10px;
+  height: auto;
 }
 
 /****** BURGERMENU IGEN (FJERNESLE AF DEN) *****/
+
+/* Desktop version */
 
 @media screen and (min-width: 769px) {
   .navigation {

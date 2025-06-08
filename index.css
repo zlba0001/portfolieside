@@ -32,6 +32,7 @@ body {
   display: none;
   flex-direction: column;
   position: absolute;
+  list-style: none;
   top: 70px;
   left: 0;
   width: 100%;
