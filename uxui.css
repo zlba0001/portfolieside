@@ -1,0 +1,191 @@
+/********* Header (BURGER MENU TAGET TAGET FRA UNDERVISNINGEN)  **************/
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #7a8b7f;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  list-style: none;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: #7a8b7f;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  z-index: 9;
+  margin-left: 0;
+  gap: 0;
+}
+
+.links li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.links li a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.links li a:hover {
+  color: #ffffff;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.burger .line {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+  transition: 0.2s linear;
+}
+
+.navigation.active .links {
+  display: flex;
+}
+
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/**************** HER SLUTTER HEADEREN ************/
+
+/************ INDHOLD BEGYNDER HER *******/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0e8d5;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+p {
+  padding: 20px;
+}
+
+main {
+  align-items: center;
+}
+.tema-intro,
+.tema-brainstorm,
+.tema-moodboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.tekst-container {
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.billede img {
+  width: 100%;
+  max-width: 500px; /* justér efter behov */
+  height: auto;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 769px) {
+  .navigation {
+    justify-content: flex-end;
+  }
+
+  .links {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    width: auto;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin-left: auto;
+    gap: 3rem;
+  }
+
+  .links li {
+    margin: 0;
+    text-align: left;
+  }
+
+  .links li a {
+    font-size: 16px;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .tema-intro,
+  .tema-brainstorm,
+  .tema-moodboard,
+  .tema-styletile,
+  .tema-wireframes,
+  .tema-hifi,
+  .tema-refleksioner,
+  .tema-kodening {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .tema-intro p {
+    margin-top: 50px;
+  }
+
+  .tema-intro img {
+    width: 100%;
+  }
+}
