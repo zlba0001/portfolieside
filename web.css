@@ -101,47 +101,63 @@ body {
   background-color: #f0e8d5;
 }
 
-.portfolio-container {
-  max-width: 500px;
+.tema {
+  padding: 2rem;
+  max-width: 20000px;
   margin: 0 auto;
-  padding: 30px 20px;
-  justify-items: center;
 }
 
-.title {
+.tema h1 {
   text-align: center;
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 40px;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
-.portfolio-boks {
-  display: block;
-  background-color: #7a8b7f;
-  border-radius: 20px;
-  max-width: 250px;
-  padding: 20px;
-  margin-bottom: 40px;
-  text-align: center;
-  text-decoration: none;
+.tema-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
-.portfolio-boks h2 {
-  font-size: 18px;
-  color: white;
-  margin-bottom: 15px;
+.tema-intro .tekst h2,
+.tema-process h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 
-.portfolio-boks img {
+.tema-intro .billede img {
   width: 100%;
-  max-width: 350px;
-  max-height: 200px;
-  object-fit: cover;
   border-radius: 10px;
-  height: auto;
 }
 
-/****** BURGERMENU IGEN (FJERNESLE AF DEN) *****/
+.tema-process {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.tema-process img {
+  width: 100%;
+}
+
+.knap-container {
+}
+
+.knap {
+  display: block;
+  padding: 0.75em 1.5em;
+  background-color: #4b6147;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 999px;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+}
 
 /* Desktop version */
 
@@ -176,40 +192,61 @@ body {
     display: none;
   }
 
-  /******* Resten af indholdet på siden *********/
+  /* Indhold */
 
-  .portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  .tema-intro {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .tema-intro .tekst,
+  .tema-intro .billede {
+    flex: 1;
+  }
+
+  .tema h1 {
+    font-size: 2.5rem;
+  }
+
+  .tema-intro .tekst h2,
+  .tema-process h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    margin-top: 10rem;
+  }
+
+  .tema-process {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
     gap: 40px;
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 0 40px;
-    text-align: center;
   }
 
-  .portfolio-boks {
+  .tema-process .tekst {
+    flex: 1;
+  }
+
+  .tema-intro .billede img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .knap {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: #4b6147;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 999px;
     text-decoration: none;
-  }
-
-  .portfolio-boks h2 {
-    font-size: 18px;
-    color: white;
-    margin-bottom: 15px;
-  }
-
-  .portfolio-boks:hover {
-    transform: scale(1.02);
-  }
-
-  .title {
-    grid-column: span 4;
-    font-size: 36px;
-    padding: 2rem;
-    margin-bottom: 5rem;
-  }
-
-  .portfolio-boks {
-    margin-bottom: 0;
+    text-align: center;
+    margin-top: 6rem;
+    margin-left: 20rem;
   }
 }

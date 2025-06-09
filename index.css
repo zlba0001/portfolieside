@@ -166,7 +166,7 @@ body {
   }
 
   .links {
-    display: flex !important;
+    display: flex;
     position: static;
     flex-direction: row;
     width: auto;
