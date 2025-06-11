@@ -9,6 +9,7 @@
   background-color: #7a8b7f;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   z-index: 10;
+  font-family: "Open Sans", sans-serif;
 }
 
 .navigation {
@@ -113,7 +114,8 @@ body {
   margin-bottom: 2rem;
 }
 
-.tema-intro {
+.tema-intro,
+.tema-process {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -131,18 +133,15 @@ body {
   border-radius: 10px;
 }
 
-.tema-process {
+/* .tema-process {
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-}
+} */
 
 .tema-process img {
   width: 100%;
-}
-
-.knap-container {
 }
 
 .knap {
@@ -194,7 +193,8 @@ body {
 
   /* Indhold */
 
-  .tema-intro {
+  .tema-intro,
+  .tema-process {
     flex-direction: row;
     align-items: flex-start;
     gap: 3rem;
@@ -218,12 +218,12 @@ body {
     margin-top: 10rem;
   }
 
-  .tema-process {
+  /* .tema-process {
     display: flex;
     align-items: start;
     justify-content: space-between;
     gap: 40px;
-  }
+  } */
 
   .tema-process .tekst {
     flex: 1;
@@ -248,5 +248,10 @@ body {
     text-align: center;
     margin-top: 6rem;
     margin-left: 20rem;
+  }
+
+  .knap-container {
+    display: block;
+    margin: 10rem;
   }
 }
